@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e7a321a3389d601458a221a0f44b7911, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.13029978, g: 0.1378501, b: 0.13977337, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 1797735}
   - component: {fileID: 1797734}
   - component: {fileID: 1797733}
+  - component: {fileID: 1797737}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -152,7 +153,7 @@ Transform:
   m_GameObject: {fileID: 1797731}
   serializedVersion: 2
   m_LocalRotation: {x: 0.13052616, y: 0, z: 0, w: 0.9914449}
-  m_LocalPosition: {x: -4.03, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -370,6 +371,15 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!45 &1797737
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1797731}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: e7a321a3389d601458a221a0f44b7911, type: 2}
 --- !u!1 &82115153
 GameObject:
   m_ObjectHideFlags: 0
@@ -445,7 +455,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134324062}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1103,7 +1113,7 @@ GameObject:
   - component: {fileID: 145726868}
   - component: {fileID: 145726867}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,7 +1324,7 @@ GameObject:
   - component: {fileID: 402241143}
   - component: {fileID: 402241142}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: WallNumber3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1362,7 +1372,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 26049080f8ee67f4e8c57a6b74e120c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1420,7 +1430,7 @@ GameObject:
   - component: {fileID: 529865592}
   - component: {fileID: 529865591}
   m_Layer: 0
-  m_Name: Plane (2)
+  m_Name: WallNumber1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1468,7 +1478,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: f172b5be7b0db224094fe602f19a6dcc, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1971,7 +1981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050090359}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2627,6 +2637,8 @@ GameObject:
   - component: {fileID: 1276996759}
   - component: {fileID: 1276996758}
   - component: {fileID: 1276996757}
+  - component: {fileID: 1276996760}
+  - component: {fileID: 1276996761}
   m_Layer: 0
   m_Name: XR Origin (XR Rig)
   m_TagString: Untagged
@@ -2674,13 +2686,39 @@ Transform:
   m_GameObject: {fileID: 1276996756}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.108384, y: 8.62164, z: 2.7263098}
+  m_LocalPosition: {x: 0, y: 10, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1740561655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1276996760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276996756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00f7a2422be713f4fbbc96c74d04bae3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: -2714671008472401837, guid: 12dcd371ff82c524e85be9f47c7f5b0a, type: 3}
+--- !u!114 &1276996761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276996756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18bb69ceed19f764eb6af1c4a1d5776b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  action: {fileID: -3614024325866404421, guid: 12dcd371ff82c524e85be9f47c7f5b0a, type: 3}
 --- !u!1 &1425190860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2694,7 +2732,7 @@ GameObject:
   - component: {fileID: 1425190862}
   - component: {fileID: 1425190861}
   m_Layer: 0
-  m_Name: Plane (4)
+  m_Name: WallNumber4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2800,7 +2838,7 @@ GameObject:
   - component: {fileID: 1582844809}
   - component: {fileID: 1582844808}
   m_Layer: 0
-  m_Name: Plane (5)
+  m_Name: Ceiling
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2918,13 +2956,13 @@ Transform:
   m_GameObject: {fileID: 1740561654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1797732}
-  - {fileID: 1050090360}
   - {fileID: 134324063}
+  - {fileID: 1050090360}
   m_Father: {fileID: 1276996759}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1942742928
@@ -3074,7 +3112,7 @@ GameObject:
   - component: {fileID: 1974413452}
   - component: {fileID: 1974413451}
   m_Layer: 0
-  m_Name: Plane (3)
+  m_Name: WallNumber2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3122,7 +3160,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: ca5e12abf0c94e0489cfd18bc2a12a9f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3179,6 +3217,7 @@ GameObject:
   - component: {fileID: 2057185561}
   - component: {fileID: 2057185560}
   - component: {fileID: 2057185559}
+  - component: {fileID: 2057185563}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -3273,6 +3312,18 @@ Transform:
   - {fileID: 1041211939}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2057185563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2057185558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99f325bfd80c7f44b8b41f242d4534fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2080803991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3284,6 +3335,7 @@ GameObject:
   - component: {fileID: 2080803994}
   - component: {fileID: 2080803993}
   - component: {fileID: 2080803992}
+  - component: {fileID: 2080803995}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -3391,6 +3443,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2080803995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080803991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fed9dc602ba0f214db608b2924a4e7f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  light: {fileID: 2080803993}
+  action: {fileID: -8075986060290419329, guid: 12dcd371ff82c524e85be9f47c7f5b0a, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
